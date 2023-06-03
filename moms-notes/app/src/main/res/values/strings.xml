@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mom\'s Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome_title">Welcome!</string>
+    <string name="add_note">Add Note</string>
+    <string name="book_icon">Book Icon</string>
+    <string name="log_out">Log out</string>
+    <string name="content">Content</string>
+    <string name="title">Title</string>
+    <string name="submit">Submit</string>
+    <string name="welcome_description">Start making your notes now!</string>
+    <string name="sign_in_desc">Sign in to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="create_new_account_newline">Create\nNew Account</string>
+    <string name="username">Username</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="register">Register</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="update">Update</string>
+</resources>

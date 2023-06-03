@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonStyle">
+        <item name="android:backgroundTint">@color/medium_blue</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="cornerRadius">6dp</item>
+    </style>
+    <style name="selectedMenu" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">12dp</item>
+        <item name="android:height">12dp</item>
+        <item name="marginHorizontal">6dp</item>
+<!--        <item name="shapeAppearance"></item>-->
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+</resources>

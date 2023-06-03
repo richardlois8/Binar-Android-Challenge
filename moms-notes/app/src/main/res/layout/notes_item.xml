@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="notesData"
+            type="com.rich.momsnote.database.Notes" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp"
+        android:layout_margin="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/backgroundHeader"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/dark_blue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnDelete"-->
+<!--                android:src="@drawable/ic_delete"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:contentDescription="Delete Notes" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnEdit"-->
+<!--                android:src="@drawable/ic_edit"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintRight_toLeftOf="@id/btnDelete"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:contentDescription="Edit Notes" />-->
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{notesData.title}"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="@{notesData.content}"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/backgroundHeader"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="D:/Kuliah/Semester 5/Android Binar/Chapter 4/Challenge/Challenge4/app/src/main/res/drawable/add.png" />
+        <ignore path="D:/Kuliah/Semester 5/Android Binar/Chapter 4/Challenge/Challenge4/app/src/main/res/drawable/background.png" />
+        <ignore path="D:/Kuliah/Semester 5/Android Binar/Chapter 4/Challenge/Challenge4/app/src/main/res/drawable/book_icon.png" />
+        <ignore path="D:/Kuliah/Semester 5/Android Binar/Chapter 4/Challenge/Challenge4/app/src/main/res/drawable/logout.png" />
+        <ignore path="D:/Kuliah/Semester 5/Android Binar/Chapter 4/Challenge/Challenge4/app/src/main/res/drawable/splashscreen.png" />
+    </issue>
+</lint>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listAlphabetsFragment">
+
+    <fragment
+        android:id="@+id/listAlphabetsFragment"
+        android:name="com.rich.challenge3nav.ListAlphabetsFragment"
+        android:label="fragment_list_alphabets"
+        tools:layout="@layout/fragment_list_alphabets" >
+        <action
+            android:id="@+id/action_listAlphabetsFragment_to_listWordsFragment"
+            app:destination="@id/listWordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listWordsFragment"
+        android:name="com.rich.challenge3nav.ListWordsFragment"
+        android:label="fragment_list_words"
+        tools:layout="@layout/fragment_list_words">
+        <argument
+            android:name="clickedAlphabet"
+            app:argType="string" />
+    </fragment>
+</navigation>
